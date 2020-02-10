@@ -1,0 +1,169 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h5 {
+  text-align: center;
+}
+
+.container-box {
+  margin: 2rem;
+  padding: 2rem;
+  border: solid 5px black;
+}
+
+.container-box .box-1 {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3c3b3b;
+}
+
+.container-box .first-btn {
+  -webkit-box-shadow: 3px 3px 10px black;
+          box-shadow: 3px 3px 10px black;
+  border: solid 2px #38a9f9;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  background: none;
+  color: #38a9f9;
+}
+
+.container-box .first-btn:hover {
+  border-color: pink;
+  color: pink;
+}
+
+.container-box .box-2 {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3c3b3b;
+}
+
+.container-box .second-btn {
+  -webkit-box-shadow: 0px 0px 30px black;
+          box-shadow: 0px 0px 30px black;
+  border: solid 2px #ff5c5c;
+  border-radius: 25px;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  background: none;
+  color: #ff5c5c;
+}
+
+.container-box .second-btn:hover {
+  border-color: pink;
+  color: pink;
+}
+
+.container-box .second-btn:focus {
+  border-color: yellow;
+  color: yellow;
+}
+
+.container-box .box-3 {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3c3b3b;
+}
+
+.container-box .third-btn {
+  -webkit-box-shadow: 3px 3px 10px black;
+          box-shadow: 3px 3px 10px black;
+  border: solid 2px #7cfc00;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  background: none;
+  color: #7cfc00;
+}
+
+.container-box .third-btn:hover {
+  -webkit-animation: rainbow 3s infinite;
+          animation: rainbow 3s infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    border-color: red;
+    color: red;
+  }
+  25% {
+    border-color: orange;
+    color: orange;
+  }
+  50% {
+    border-color: yellow;
+    color: yellow;
+  }
+  75% {
+    border-color: blue;
+    color: blue;
+  }
+  100% {
+    border-color: purple;
+    color: purple;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    border-color: red;
+    color: red;
+  }
+  25% {
+    border-color: orange;
+    color: orange;
+  }
+  50% {
+    border-color: yellow;
+    color: yellow;
+  }
+  75% {
+    border-color: blue;
+    color: blue;
+  }
+  100% {
+    border-color: purple;
+    color: purple;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

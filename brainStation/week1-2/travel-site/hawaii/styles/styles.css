@@ -1,0 +1,102 @@
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font-family: verdana;
+}
+
+header {
+    width: 100%;
+}
+
+.top-bg {
+    background-color: #9dcdf5;
+    max-width: 100%;
+    height: 150px;
+}
+
+.logo  {
+    color: #2d3982;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    background-color: #ffffff;
+    z-index: 2;
+    max-width: 100%;
+}
+
+
+nav {
+    margin-left: 800px;
+}
+
+.top-nav {
+    display: flex;
+    list-style: none;
+    
+}
+
+.home,
+.hawaii,
+.iceland,
+.greece {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-image: url("../../home/assets/hawaii.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+}
+
+h1 {
+    color: #ffffff;
+    padding: 50px 40px 80px;
+    font-size: 42px;
+    
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.day {
+    width: 20%;
+    text-align: center;
+    background-color: #ffffff;
+    margin-left: 25px;
+    height: 35vh;
+    position: relative;
+}
+
+.itinerary {
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-size: 18px;
+    margin: 15px;
+}
+
+.underline {
+    display: inline-block;
+    background-color: #000000;
+    height: 2px;
+    width: 220px;
+    position: absolute;
+    top: 50px;
+    right: 15px;  
+}
+.footer {
+    background-color: #9dcdf5;
+    max-width: 100%;
+    height: 150px;
+}

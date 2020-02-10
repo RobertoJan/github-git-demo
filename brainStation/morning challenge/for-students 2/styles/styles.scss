@@ -1,0 +1,75 @@
+/* change to scss, apply font-face, and write your mixins/rulesets! 
+
+The desktop size is at 1024px
+
+Some important colours you may need!
+
+header background colour #fff;
+body background colour #dcc6bf;
+footer background colour #132D34;
+*/
+
+@font-face {
+    font-family: "open sans";
+    src: url('../fonts/OpenSans-Regular.ttf') format("otf");
+}
+
+$primary-background: #fff;
+$secondary-background: #dcc6bf;
+$tertiary-background: #132D34;
+
+
+@mixin desktop-view {
+    @media screen (min-width: $desktop) {
+        @content 
+    }
+        
+    
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+.header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu--links {
+  display: none;
+}
+
+.hero {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 70vw;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.feature {
+  background-color: #dcc6bf;
+}
+
+.footer {
+  background-color: #132d34;
+}

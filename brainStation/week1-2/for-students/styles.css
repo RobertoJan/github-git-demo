@@ -1,0 +1,99 @@
+body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4 {margin: 0}
+p {
+  font-size: 13px; 
+  text-align: center; 
+  color: white; 
+  font-weight: bold;
+}
+.child, .mom, .dad {
+  width: 50px; 
+  height:50px; 
+  border: 1px solid black; 
+  border-radius: 50%;
+}
+.child {
+  background: #209b76;
+}
+.mom, .dad {
+  background: #3164b7;
+}
+.order__child, 
+.child--squish {
+  width: 80px; 
+  height: 80px; 
+  margin: 2px;
+}
+.order {
+  display: flex;
+  justify-content: center;
+}
+.camera {
+  display: flex; 
+  justify-content: center;
+}
+.camera p {
+  padding: 20px;
+  background: tan; 
+}
+.red-line {
+  background: #df2020;
+  padding: 5px;
+}
+.safe-house-wrapper { 
+  display: flex;
+  justify-content: space-between;
+}
+.safe-house {
+  background: lavender;
+}
+.spacing {
+  margin: 1em 5em; 
+  padding: 1em; 
+  border: solid 5px black;
+}
+
+.box-spacing {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.child-two {
+  align-self: flex-end;
+}
+
+.center {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding-bottom: 20px;
+  text-align: center;
+  
+}
+
+.box-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  display: flex; 
+  justify-content: flex-start;
+}
+.squish {
+  display: flex;
+}
+.spacing--height {
+  height: 300px; 
+  display: flex; 
+  align-items: flex-end;
+}
+
+/* -------start writing your code below-------- */
+

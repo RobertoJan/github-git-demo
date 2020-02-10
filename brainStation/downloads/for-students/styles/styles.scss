@@ -1,0 +1,143 @@
+/* change to scss, apply font-face, and write your mixins/rulesets! 
+
+The desktop size is at 1024px
+
+Some important colours you may need!
+
+header background colour #fff;
+body background colour #dcc6bf;
+footer background colour #132D34;
+*/
+
+$desktop: 1024px;
+$header-background: #fff;
+$body-background: #dcc6bf;
+$footer-background: #132D34;
+
+@font-face {
+  font-family: "Open Sans";
+  src: ("../fonts/OpenSans-Regular.ttf"), format ("otf");
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin mobile-padding {
+  padding: 0 1rem;
+}
+
+@mixin desktop-padding {
+  padding: 0 3rem;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Open Sans';
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+li {
+  padding-left: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
+
+
+.header {
+  background-color: $header-background;
+  // width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  @include mobile-padding;
+
+  @include desktop {
+    align-items: center;
+
+    @include desktop-padding;
+  }
+
+  &__menu {
+
+    &--links {
+      display: none;
+
+      @include desktop {
+        display: flex;
+        list-style-type: none;
+      }
+    }
+  }
+
+  &__hamburger {
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.hero {
+  background: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    height: 70vh;
+  }
+
+  &__heading {
+    @include mobile-padding;
+    color: white;
+
+    @include desktop {
+      @include desktop-padding;
+    }
+  }
+}
+
+.feature {
+  background-color: $body-background;
+  height: 100%;
+
+  @include desktop {
+    @include desktop-padding;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    @include mobile-padding;
+    padding: 1rem;
+
+    @include desktop {
+      padding: 3rem 0;
+      width: 31%;
+    }
+  }
+}
+
+.footer {
+  background-color: $footer-background;
+  @include mobile-padding;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    color: white;
+  }
+}

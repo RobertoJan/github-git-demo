@@ -1,0 +1,34 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.demo-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.demo-add__form {
+  border: none;
+  border-style: none;
+}
+
+.demo-add__input {
+  padding: 1rem;
+}
+
+.demo-add__action {
+  width: 250px;
+  padding: 2rem;
+}
+
+.demo-add__result {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+/*# sourceMappingURL=style.css.map */

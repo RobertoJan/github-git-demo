@@ -1,0 +1,28 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.demo-add {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &__form {
+    border: none;
+    border-style: none;  
+  }
+
+  &__input {
+    padding: 1rem;
+  }
+
+  &__action {
+    width: 250px;
+    padding: 2rem;
+  }
+
+  &__result {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+}

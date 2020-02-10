@@ -1,0 +1,119 @@
+// Variables
+$box-color: #3c3b3b;
+$button1-color: #38a9f9;
+$button2-color: #ff5c5c;
+$button3-color: #7cfc00;
+
+// Mixins
+
+@mixin box-sizing {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-styles {
+  width: 100px;
+  height: 50px;
+  outline: none;
+  background: none;
+}
+
+// Styles
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h5 {
+  text-align: center;
+}
+
+.container-box {
+  margin: 2rem;
+  padding: 2rem;
+  border: solid 5px black;
+
+  .box-1 {
+    @include box-sizing;
+    background-color: $box-color;
+  }
+
+  .first-btn {
+    box-shadow: 3px 3px 10px black;
+    border: solid 2px $button1-color;
+    @include button-styles;
+    color: $button1-color;
+    &:hover {
+      border-color: pink;
+      color: pink;
+    }
+  }
+
+  .box-2 {
+    @include box-sizing;
+    background-color: $box-color;
+  }
+
+  .second-btn {
+    box-shadow: 0px 0px 30px black;
+    border: solid 2px $button2-color;
+    border-radius: 25px;
+    @include button-styles;
+    color: $button2-color;
+    &:hover {
+      border-color: pink;
+      color: pink;
+    }
+    &:focus {
+      border-color: yellow;
+      color: yellow;
+    }
+  }
+
+  .box-3 {
+    @include box-sizing;
+    background-color: $box-color;
+  }
+  .third-btn {
+    box-shadow: 3px 3px 10px black;
+    border: solid 2px $button3-color;
+    @include button-styles;
+    color: $button3-color;
+    &:hover {
+      animation: rainbow 3s infinite;
+    }
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    border-color: red;
+    color: red;
+  }
+  25% {
+    border-color: orange;
+    color: orange;
+  }
+  50% {
+    border-color: yellow;
+    color: yellow;
+  }
+  75% {
+    border-color: blue;
+    color: blue;
+  }
+  100% {
+    border-color: purple;
+    color: purple;
+  }
+}

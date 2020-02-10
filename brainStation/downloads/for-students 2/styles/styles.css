@@ -1,0 +1,151 @@
+/* change to scss, apply font-face, and write your mixins/rulesets! 
+
+The desktop size is at 1024px
+
+Some important colours you may need!
+
+header background colour #fff;
+body background colour #dcc6bf;
+footer background colour #132D34;
+*/
+@font-face {
+  font-family: "Open Sans";
+  src: "../fonts/OpenSans-Regular.ttf", format "otf";
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans';
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+li {
+  padding-left: 1rem;
+}
+.header {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 3rem;
+  }
+}
+
+.header__menu--links {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header__menu--links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+
+.hero {
+  background: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 70vh;
+  }
+}
+
+.hero__heading {
+  padding: 0 1rem;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .hero__heading {
+    padding: 0 3rem;
+  }
+}
+
+.feature {
+  background-color: #dcc6bf;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .feature {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.feature__content {
+  padding: 0 1rem;
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .feature__content {
+    padding: 3rem 0;
+    width: 31%;
+  }
+}
+
+.footer {
+  background-color: #132D34;
+  padding: 0 1rem;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__text {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+
+
+.menu-hero {
+    background-image: url('../../coffee-shop-assets/coffee-circle.jpg');
+    width: 1440px;
+    height: 575px;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu {
+    color: #ffffff;
+    background-color: #464646;
+    font-family: Helvetica 100;
+    font-size: 60px;
+    width: auto;
+}
+
+li {
+    list-style: none;
+}
+
+.menu-section {
+    background-color: #393939;
+    text-align: center;
+}
+
+.menu-section a {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+

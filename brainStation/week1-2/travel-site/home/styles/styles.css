@@ -1,0 +1,124 @@
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+
+body {
+    font-family: verdana;
+}
+
+header {
+    width: 100%;
+}
+
+.logo  {
+    color: #2d3982;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 2;
+    max-width: 100%;
+}
+
+
+nav {
+    margin-left: 800px;
+}
+
+.top-nav {
+    display: flex;
+    list-style: none;
+    
+}
+
+.home,
+.hawaii,
+.iceland,
+.greece {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.slogan-section {
+    background-color: #f8f8f8;
+    padding: 80px 80px;
+    position: relative;
+}
+
+.slogan {
+    width: 60%;
+    
+}
+
+.slogan-section h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #101d42;
+    font-size: 40px;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #5969d0;
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.hero-img-container {
+    position: absolute;
+    width: 40%;
+    top: 0;
+    right: 0;
+}
+
+.img {
+    max-width: 100%;
+    height: auto; 
+}
+
+main h2 {
+    margin-left: 100px;
+    color: #ffffff;
+}
+
+.destination {
+    display: flex;
+    justify-content: center;
+}
+
+.hawaii-image,
+.iceland-image,
+.greece-image {
+    width: 25%;
+    position: relative;
+}
+
+.img2 {
+    max-width: 285px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 5px;
+    border: 1px solid black 0.2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.destination-name {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+}
+
+.footer {
+    background-color: #9dcdf5;
+    max-width: 100%;
+    height: 150px;
+}
+
